@@ -52,6 +52,11 @@ private slots:
 	/// </summary>
 	void clear_table_btn_clicked();
 
+	/// <summary>
+	/// Слот-функция, реагирующая на изменения данных в таблице.
+	/// </summary>
+	void handleItemChanged(QTableWidgetItem* item);
+
 private:
 	Ui::MainWindowClass *_ui;
 	std::vector<std::vector<int>> _arrays{}; // хранит массивы
